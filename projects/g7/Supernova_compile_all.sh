@@ -11,6 +11,7 @@ make beko_all
 echo "################# STOP ###################"
 
 now_finito=$(date +"%T")
+echo "start time : $now_start"
 echo "Current time finito : $now_finito"
 #if you want just run >>>> make beko
 #make beko
