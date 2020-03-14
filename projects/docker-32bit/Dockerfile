@@ -7,6 +7,6 @@ RUN apt-get update
 #klasörleri hazırlayalım
 WORKDIR /home/
 RUN mkdir toolchain \
-    mkdir autobuild 
+     mkdir autobuild 
 
 COPY home/yazilim/Projects/Environments/* /home/toolchain
