@@ -4,7 +4,7 @@ now_start=$(date +"%T")
 echo "Current time  start: $now_start"
 
 cd trunk/source/Supernova/projects/
-source ./buildsettings/build_Munich_220A_ROM_NAND_DVB_TEE_URSA9.sh
+source ./buildsettings/build_Munich_220A_ROM_NAND_DVB_TEE_URSA9_NonNetflix.sh
 
 make beko_all
 
