@@ -7,7 +7,7 @@ source board/macan/buildsettings/build_Macan_253A_ROM_EMMC_DVB.sh
 cd ../../../..
 
 cd trunk/source/MBoot/sboot
-cp ./configs/macan/.config.macan.supernova.253a.rom_nand.32bit.kernel.tee .config
+cp ./configs/macan/.config.macan.supernova.253a.rom_emmc.32bit.kernel.tee .config
  
 make menuconfig # -> open if you need and -> Exit and Save
 make clean && make
