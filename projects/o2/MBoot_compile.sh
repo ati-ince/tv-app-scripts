@@ -12,4 +12,5 @@ cp ./configs/macan/.config.macan.supernova.253a.rom_nand.32bit.kernel.tee .confi
 make menuconfig # -> open if you need and -> Exit and Save
 make clean && make
 
-
+# Get mboot.bin in /MBoot/sboot/out
+# For update boot from service menu, use RomBoot.bin
