@@ -1,0 +1,15 @@
+#export PATH="/tools/arm/arm-2012.09//bin/:/tools/arm_eabi-2011.03/bin:$PATH"
+
+#first should have source the project
+cd trunk/source/Supernova/projects/
+source board/macan/buildsettings/build_Macan_253A_ROM_EMMC_DVB.sh
+
+cd ../../../..
+
+cd trunk/source/MBoot/sboot
+cp ./configs/macan/.config.macan.supernova.253a.rom_nand.32bit.kernel.tee .config
+ 
+make menuconfig # -> open if you need and -> Exit and Save
+make clean && make
+
+
