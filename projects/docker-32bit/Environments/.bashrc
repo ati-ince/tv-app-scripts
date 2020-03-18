@@ -98,10 +98,12 @@ fi
 #    . /etc/bash_completion
 #fi
 PATH="/home/toolchain/ToolchainLink:${PATH}"
-PATH="/home/CodeSourcery/Sourcery_G++_Lite/bin:/opt/Sourcery_G++_Lite/bin:${PATH}"
-PATH="/home/toolchain/arm-2012.09/bin:/home/toolchain/arm_eabi-2011.03/bin:/home/toolchain/r2-elf-linux-1.3.5.14/bin:${PATH}"
-PATH="/home/toolchain/mips-2014.05/bin:/home/toolchain/ToolChain/arm-2014.05/bin:${PATH}"
-export PATH=$PATH
+#PATH="/home/Projects/Toolchains/ToolchainLink:${PATH}"
+PATH="/home/Projects/Toolchains/CodeSourcery/Sourcery_G++_Lite/bin:${PATH}" #/opt/Sourcery_G++_Lite/bin:
+PATH="/home/Projects/Toolchains/arm-2012.09/bin:/home/Projects/Toolchains/arm_eabi-2011.03/bin:/home/Projects/Toolchains/r2-elf-linux-1.3.5.14/bin:${PATH}"
+export PATH=/home/Projects/Toolchains/mips-2014.05/bin:/home/Projects/Toolchains/ToolChain/arm-2014.05/bin:$PATH
+#PATH="/home/toolchain/arm-2012.09/bin:/home/toolchain/arm_eabi-2011.03/bin:/home/toolchain/r2-elf-linux-1.3.5.14/bin:${PATH}"
+#export PATH=/home/toolchain/mips-2014.05/bin:/home/toolchain/ToolChain/arm-2014.05/bin:$PATH
 ###
 
 ###

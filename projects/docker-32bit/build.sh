@@ -1,1 +1,1 @@
-sudo docker build -t artv32bits:work3 .
+sudo docker build -t artv32bits:work12 .
