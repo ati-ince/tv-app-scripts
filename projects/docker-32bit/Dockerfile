@@ -7,16 +7,21 @@ RUN mkdir toolchain && mkdir autobuild
 WORKDIR /home/autobuild 
 RUN mkdir Projects && pwd
 
+#backup symbolic link
+WORKDIR /home/Projects/Toolchains/
+RUN ln -s /home/Projects/Toolchains/mips-4.3/bin ToolchainLink
 
 
 #carry local file to docker image
 #WORKDIR /home/autobuild/Projects
 ADD ./Environments/.bashrc /root/.bashrc
-#ADD ./Environments/all_toolchain /home/toolchain #iptal... artık Projects load ile çekiyoruz... 
+#ADD ./Environments/all_toolchain /home/toolchain #iptal... artık Projects load ile çekiyoruz... Boylece devasa veri yuklemeye gerek yok... 
 ADD ./Environments/keys /home/autobuild/Projects/keys
 
+WORKDIR /home/toolchain/
 #links and adjust the file
-CMD = ["ln -s /home/Projects/Toolchains/mips-4.3/bin /home/toolchain/ToolchainLink"]
+RUN ln -s /home/Projects/Toolchains/mips-4.3/bin ToolchainLink
+RUN ls -la
 
 #environment degişkenleri ve  ayarlar
 #export LC_CTYPE=en_US.UTF-8 
