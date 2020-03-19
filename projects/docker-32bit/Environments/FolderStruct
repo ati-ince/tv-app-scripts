@@ -1,0 +1,66 @@
+root@99355c81bc2f:/home# ls -la /home/
+total 20
+drwxr-xr-x  1 root root 4096 Mar 19 14:33 .
+drwxr-xr-x  1 root root 4096 Mar 19 14:40 ..
+drwxrwxrwx 13 1000 1000 4096 Mar 19 19:12 Projects
+drwxr-xr-x  1 root root 4096 Mar 17 13:54 autobuild
+drwxr-xr-x  1 root root 4096 Mar 19 14:33 toolchain
+
+
+--------------------------------------
+
+root@99355c81bc2f:/home# ls -la  autobuild/Projects/     
+total 12
+drwxr-xr-x 1 root root 4096 Mar 19 14:33 .
+drwxr-xr-x 1 root root 4096 Mar 17 13:54 ..
+drwxr-xr-x 2 root root 4096 Mar 19 14:33 keys
+
+-------------------------------------------
+
+root@99355c81bc2f:/home# ls -la Projects/
+total 196
+drwxrwxrwx 13 1000 1000   4096 Mar 19 19:12 .
+drwxr-xr-x  1 root root   4096 Mar 19 14:33 ..
+-rwxrwxrwx  1 root root   4021 Jan 30 00:36 .bashrc
+-rw-r--r--  1 root root   4021 Mar 12 14:59 .bashrc_docker
+drwxrwxrwx  3 1000 1000   4096 Mar 19 09:37 Coremax_M1_SHARED_PRJ
+drwxrwxrwx  5 1000 1000   4096 Mar 19 00:22 G10_R2TEE_Revision2508
+drwxrwxrwx  4 1000 1000   4096 Mar 18 23:41 G6F_PRJ_SHARED
+-rw-------  1 1000 1000 122880 Mar  9 08:13 G8_FlashMap_V12.001.00.xls
+drwxrwxrwx  5 1000 1000   4096 Mar 18 23:41 G8_rev6614
+drwxrwxrwx  2 1000 1000   4096 Mar 16 07:10 NT_Netflix5.0
+drwxrwxrwx  7 1000 1000   4096 Mar 14 14:02 PyProjects
+drwxrwxr-x  4 1000 1000   4096 Mar 17 12:47 Qt_Cpp
+drwxrwxrwx  9 1000 1000   4096 Mar 19 19:11 Toolchains
+drwxrwxr-x  4 1000 1000   4096 Feb  3 22:38 ar_src_g7g8
+drwxrwxrwx  4 1000 1000   4096 Feb 13 11:19 ar_src_gmgrgs
+drwxrwxr-x  7 1000 1000   4096 Mar 17 14:10 docker_bashrc
+-rwxrwxrwx  1 1000 1000    505 Feb 13 13:41 re??lease ????k?????? NT not
+-rw-r--r--  1 root root    732 Mar 19 06:26 root@77ed294adffa.log
+-rw-r--r--  1 root root    344 Mar 19 06:23 root@ce7e2f510a87.log
+-rw-rw-r--  1 1000 1000    366 Mar 18 23:39 test_script.sh
+root@99355c81bc2f:/home# 
+
+---------------------------
+
+root@99355c81bc2f:/home# ls -la Projects/Toolchains/
+total 36
+drwxrwxrwx  9 1000 1000 4096 Mar 19 19:11 .
+drwxrwxrwx 13 1000 1000 4096 Mar 19 19:12 ..
+drwxr-xr-x  4 root root 4096 Mar 18 10:14 CodeSourcery
+drwxr-xr-x  3 root root 4096 Mar 18 11:07 ToolChain
+drwxr-xr-x  8 root root 4096 Mar 18 11:19 arm-2012.09
+drwxr-xr-x  7 root root 4096 Mar 18 12:00 arm_eabi-2011.03
+drwxr-xr-x  8 root root 4096 Mar 18 12:19 mips-2014.05
+drwxr-xr-x  9 root root 4096 Mar 18 12:24 mips-4.3
+drwxr-xr-x 11 root root 4096 Mar 18 12:29 r2-elf-linux-1.3.5.14
+root@99355c81bc2f:/home# 
+
+----------------------------------------------------
+
+root@99355c81bc2f:/home# ls -la toolchain/
+total 8
+drwxr-xr-x 1 root root 4096 Mar 19 14:33 .
+drwxr-xr-x 1 root root 4096 Mar 19 14:33 ..
+lrwxrwxrwx 1 root root   38 Mar 19 14:33 ToolchainLink -> /home/Projects/Toolchains/mips-4.3/bin
+root@99355c81bc2f:/home# 
