@@ -34,6 +34,8 @@ CMD = ["export LC_CTYPE=en_US.UTF-8"]
 
 #eksik paket kuralım
 RUN apt-get -y update
+# su library ... /usr/src ... 7module problemi cozum arayısı.......   [sil] çalışmaz ise... çalışmadı ama dursun.. belki kullanırız ileride...
+#RUN apt-get install -y linux-headers-generic 
 #make hata çözümü, eksikmiş. 
 RUN apt-get install -y make
 # make[5]: ar: Command not found hatası için... 
@@ -50,9 +52,12 @@ RUN apt-get install -y dos2unix
 RUN apt-get install -y fakeroot
 RUN apt-get install -y squashfs-tools
 RUN apt-get install -y rar unrar
+# scripts/kconfig/lxdialog/dialog.h:31:20: fatal error: curses.h: No such file or directory   -> çözümü
+RUN apt-get install -y libncurses5-dev
 #MIPS hatası 32-64 bit çözümü için aşağıdakini yapalım.... 
 RUN apt-get install -y mtd-utils  
 #cp  /usr/sbin/mkfs-ubifs /home/yazilim/Projects/Coremax_M1_SHARED_PRJ/trunk/source/Supernova/target/tools 
+#cp /home/Projects/docker_bashrc/mkfs.ubifs /home/Projects/Coremax_M1_SHARED_PRJ/trunk/source/Supernova/target/tools/mkfs.ubifs
 #Altına kopyalayıp degiştirdiğimde sorunu çözdü :) 
 RUN rm /bin/sh && \
     ln -s /bin/bash /bin/sh 
