@@ -1,0 +1,3 @@
+ToolchainLink -> /home/toolchain/mips-4.3/bin
+
+ln -s /home/Projects/Toolchains/mips-4.3/bin ToolchainLink
